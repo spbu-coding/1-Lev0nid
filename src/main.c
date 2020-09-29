@@ -30,8 +30,8 @@ int main() {
     for(int i = 0; i < amountOfCases; i++) {
         results[i][0] = areaByRectangleMethod(leftBorder, rightBorder, experiments[i]);
         results[i][1] = areaBySimpson(leftBorder, rightBorder, experiments[i]);
-        printf("%i%c", experiments[i], ' ');
-        printf("%.5f%c", results[i][0], ' ');
+        printf("%i ", experiments[i]);
+        printf("%.5f", results[i][0]);
         printf("%.5f\n", results[i][1]);
     }
     return 0;
