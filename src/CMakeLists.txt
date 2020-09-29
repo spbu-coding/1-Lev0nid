@@ -1,6 +1,4 @@
-cmake_minimum_required(VERSION 3.17)
-project(Homework_task_1 C)
+file(GLOB_RECURSE C_SOURCES ./*.c)
 
-set(CMAKE_C_STANDARD 11)
-
-add_executable(Homework_task_1 main.c)
+add_executable(main ${C_SOURCES})
+target_link_libraries(main m)
