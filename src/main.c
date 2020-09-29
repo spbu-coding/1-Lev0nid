@@ -25,7 +25,7 @@ int main() {
 
     //Подсчет площади и вывод
     int amountOfCases = 6;
-    int experiments[6] = {5, 10, 20, 100, 500, 1000};
+    int experiments[6] = {6, 10, 20, 100, 500, 1000};
     double results[6][2];
     for(int i = 0; i < amountOfCases; i++) {
         results[i][0] = areaByRectangleMethod(leftBorder, rightBorder, experiments[i]);
