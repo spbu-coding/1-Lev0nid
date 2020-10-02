@@ -7,7 +7,7 @@ double areaBySimpson(double leftBorder, double rightBorder, int amountOfRectangl
     for(int i = 1; i < amountOfRectangles; i+=2) {
         subgraphArea += sin(leftBorder + (i - 1) * rectangleSize) + 4 * sin(leftBorder + i * rectangleSize) + sin(leftBorder + (i + 1) * rectangleSize);
     }
-    return subgraphArea * rectangleSize / 3;
+    return (subgraphArea * rectangleSize) / 3;
 }
 
 double areaByRectangleMethod(double leftBorder, double rightBorder, int amountOfRectangles) {
