@@ -31,7 +31,7 @@ int main() {
         results[i][0] = areaByRectangleMethod(leftBorder, rightBorder, experiments[i]);
         results[i][1] = areaBySimpson(leftBorder, rightBorder, experiments[i]);
         printf("%i ", experiments[i]);
-        printf("%.5f", results[i][0]);
+        printf("%.5f ", results[i][0]);
         printf("%.5f\n", results[i][1]);
     }
     return 0;
