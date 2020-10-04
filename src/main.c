@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+//количество экспериментов вынесено в глобальное поле
+const int amountOfCases = 6;
 
 double findingAreaBySimpson(double leftBorder, double rightBorder, int amountOfRectangles) {
     double subgraphArea = 0, rectangleSize = (rightBorder - leftBorder) / amountOfRectangles;
@@ -28,7 +30,6 @@ int main() {
     }
 
     //Подсчет площади и вывод
-    const int amountOfCases = 6;
     int experiments[amountOfCases] = {6, 10, 20, 100, 500, 1000};
     double results[amountOfCases][2];
     for(int i = 0; i < amountOfCases; i++) {
